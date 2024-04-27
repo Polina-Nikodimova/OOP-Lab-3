@@ -167,6 +167,16 @@ class Customer {
     public void setAge(int age) {
         this.age = age;
     }
+
+    // Перегрузка метода toString для вывода информации о клиенте
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
 
 public class Main {
